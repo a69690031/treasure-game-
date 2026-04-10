@@ -4,7 +4,7 @@
   import path from 'path';
 
   export default defineConfig({
-    base: '/treasure-game/',
+    base: '/treasure-game-/',
     plugins: [react()],
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
