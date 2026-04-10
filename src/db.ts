@@ -10,7 +10,7 @@ const DB_KEY = 'treasure_game_db';
 let db: Database | null = null;
 
 export async function initDb(): Promise<void> {
-  const SQL = await initSqlJs({ locateFile: () => '/sql-wasm.wasm' });
+  const SQL = await initSqlJs({ locateFile: () => `${import.meta.env.BASE_URL}sql-wasm.wasm` });
 
   const saved = localStorage.getItem(DB_KEY);
   if (saved) {
